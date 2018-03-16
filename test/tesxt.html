@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script src="https://unpkg.com/better-scroll/dist/bscroll.min.js"></script>
+  <style>
+    .wrapper{
+      width: 150px;
+      height:150px;
+      border: 10px solid red;
+      overflow:hidden;
+      /*
+      1. 父容器定高宽
+      2. 子元素溢出
+      3. 创建 bs对象
+      */
+    }
+    .content{
+      width:300px;
+      height:150px;
+    }
+  </style>
+</head>
+<body>
+<div class="wrapper">
+  <div class="content">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    Alias eaque nam totam? Animi asperiores aspernatur, corporis
+    , cum dolorem eius esse illum impedit iste iure mollitia nobis omnis
+    suscipit temporibus veritatis</div>
+</div>
+<script>
+  new BScroll('.wrapper',{
+    click:true,
+    scrollX:true,
+  })
+</script>
+</body>
+</html>
