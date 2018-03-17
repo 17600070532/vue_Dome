@@ -22,13 +22,7 @@
           <div class="header_bottom">
             <div class="swiper-container navs">
               <div class="swiper-wrapper navs_sw">
-                <div class="swiper-slide nav_swi"><a href="#">首页</a></div>
-                <div class="swiper-slide nav_swi"><a href="#">狗狗主粮</a></div>
-                <div class="swiper-slide nav_swi"><a href="#">服饰城</a></div>
-                <div class="swiper-slide nav_swi"><a href="#">医疗保健</a></div>
-                <div class="swiper-slide nav_swi"><a href="#">零食玩具</a></div>
-                <div class="swiper-slide nav_swi"><a href="#">日用外出</a></div>
-                <div class="swiper-slide nav_swi"><a href="#">美容香波</a></div>
+                <div class="swiper-slide nav_swi" v-for="(menu,index) in data.menus" :key="index"><a href="#">{{menu.menu_name}}</a></div>
               </div>
             </div>
           </div>
@@ -37,29 +31,33 @@
           <div class="box_bt content">
             <div class="swiper-container swiper-container-horizontal _LunBo">
               <div class="swiper-wrapper _lunBo_ul">
-                <div class="swiper-slide _lunBo_li"><a href="#"><img src="./images/zhuliang.jpg"></a></div>
-                <div class="swiper-slide _lunBo_li"><a href="#"><img src="./images/zhuliang.jpg"></a></div>
-                <div class="swiper-slide _lunBo_li"><a href="#"><img src="./images/zhuliang.jpg"></a></div>
-                <div class="swiper-slide _lunBo_li"><a href="#"><img src="./images/zhuliang.jpg"></a></div>
-                <div class="swiper-slide _lunBo_li"><a href="#"><img src="./images/zhuliang.jpg"></a></div>
-                <div class="swiper-slide _lunBo_li"><a href="#"><img src="./images/zhuliang.jpg"></a></div>
+                <div class="swiper-slide _lunBo_li" v-for="(banner,index) in data.dog_banner" :key="index">
+                  <a href="#">
+                    <img :src="banner">
+                  </a>
+                </div>
+                <!--<div class="swiper-slide _lunBo_li"><a href="#"><img src="./images/zhuliang.jpg"></a></div>-->
+                <!--<div class="swiper-slide _lunBo_li"><a href="#"><img src="./images/zhuliang.jpg"></a></div>-->
+                <!--<div class="swiper-slide _lunBo_li"><a href="#"><img src="./images/zhuliang.jpg"></a></div>-->
+                <!--<div class="swiper-slide _lunBo_li"><a href="#"><img src="./images/zhuliang.jpg"></a></div>-->
+                <!--<div class="swiper-slide _lunBo_li"><a href="#"><img src="./images/zhuliang.jpg"></a></div>-->
               </div>
               <!-- Add Pagination -->
               <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span></div>
             </div>
-            <div class="box_better_imgs"><a href="#"><img src="./images/dog.jpg"></a></div>
+            <div class="box_better_imgs"><a href="#"><img :src="data.dog_img"></a></div>
             <div class="box_better_uls">
               <ul>
-                <li><a href="#"><img src="./images/aaa.jpg"></a></li>
-                <li><a href="#"><img src="./images/aaa.jpg"></a></li>
-                <li><a href="#"><img src="./images/aaa.jpg"></a></li>
-                <li><a href="#"><img src="./images/aaa.jpg"></a></li>
-                <li><a href="#"><img src="./images/aaa.jpg"></a></li>
-                <li><a href="#"><img src="./images/aaa.jpg"></a></li>
-                <li><a href="#"><img src="./images/aaa.jpg"></a></li>
-                <li><a href="#"><img src="./images/aaa.jpg"></a></li>
-                <li><a href="#"><img src="./images/aaa.jpg"></a></li>
-                <li><a href="#"><img src="./images/aaa.jpg"></a></li>
+                <li v-for="(list,index) in data.menu_list" :key="index"><a href="#"><img :src="list"></a></li>
+                <!--<li><a href="#"><img src="./images/aaa.jpg"></a></li>-->
+                <!--<li><a href="#"><img src="./images/aaa.jpg"></a></li>-->
+                <!--<li><a href="#"><img src="./images/aaa.jpg"></a></li>-->
+                <!--<li><a href="#"><img src="./images/aaa.jpg"></a></li>-->
+                <!--<li><a href="#"><img src="./images/aaa.jpg"></a></li>-->
+                <!--<li><a href="#"><img src="./images/aaa.jpg"></a></li>-->
+                <!--<li><a href="#"><img src="./images/aaa.jpg"></a></li>-->
+                <!--<li><a href="#"><img src="./images/aaa.jpg"></a></li>-->
+                <!--<li><a href="#"><img src="./images/aaa.jpg"></a></li>-->
               </ul>
             </div>
             <div class="box_better_imgs1">
@@ -89,6 +87,7 @@
 import Swiper from 'swiper'
 import BScroll  from 'better-scroll'
 import 'swiper/dist/css/swiper.css'
+import {mapState} from 'vuex'
   export default{
     mounted (){
       new BScroll('.wrapp',{
@@ -101,18 +100,26 @@ import 'swiper/dist/css/swiper.css'
       })
 
 
-      var swiper = new Swiper('._LunBo', {
-        loop:true,
-        autoplay: {
-          delay: 2500,
-          disableOnInteraction: false,
-        },
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-        },
-      });
+//      debugger
+      this.$store.dispatch('shouye',()=>{
+        this.$nextTick(()=>{
+          var mySwiper = new Swiper ('._LunBo', {
+            loop: true,
+            autoplay: {
+              delay: 1000,
+              disableOnInteraction: false,
+            },
+            // 如果需要分页器
+            pagination: {
+              el: '.swiper-pagination',
+            },
 
+          })
+        })
+      })
+    },
+    computed:{
+      ...mapState(['data'])
     }
   }
 </script>
@@ -212,7 +219,8 @@ import 'swiper/dist/css/swiper.css'
                 outline 0
       .box_better_bottom
         width 100%
-        height 140px
+        height 667px
+        margin-top 86px
         ._LunBo
           width 100%
           height 160px

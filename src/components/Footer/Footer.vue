@@ -1,7 +1,7 @@
 <template>
   <div class="footernav bottom_menu_bar bgfff bottomBox">
     <ul class="footernav_ul">
-      <li class="index-a dogon"><span @click="goto('/shouye')">首页</span></li>
+      <li class="index-a dogon"><span @click="goto('/shouye')">首页 <i></i></span></li>
       <li class="type-a"><span @click="goto('/fenlei')">分类</span></li>
       <li class="cart-a"><span @click="goto('/gouwuche')">购物车</span></li>
       <li class="myepet-a"><span @click="goto('/chongwu')">我的宠物</span></li>

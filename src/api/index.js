@@ -4,4 +4,4 @@ import ajax from './ajax'
 
 //获取地址信息(根据经纬度串)
 
-export const  reqShouYe = () =>ajax('/shouye')
+export const  reqimgs = () => ajax('/shouyeb')
