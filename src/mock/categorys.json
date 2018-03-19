@@ -1,0 +1,64 @@
+{
+  "msg": "",
+  "code": "succeed",
+  "login_status": 0,
+  "mall_uid": "epet_0",
+  "mall_user": "",
+  "sys_time": 1521134245,
+  "hash": "",
+  "epet_site": "epet",
+  "categorys": [
+    {
+      "cateid": 1,
+      "name": "\u4e3a\u60a8\u63a8\u8350"
+    },
+    {
+      "cateid": "2",
+      "name": "\u72d7\u72d7\u4e3b\u7cae"
+    },
+    {
+      "cateid": "3",
+      "name": "\u72d7\u72d7\u96f6\u98df"
+    },
+    {
+      "cateid": "4",
+      "name": "\u72d7\u72d7\u670d\u9970"
+    },
+    {
+      "cateid": "5",
+      "name": "\u72d7\u72d7\u7a9d\u57ab"
+    },
+    {
+      "cateid": "6",
+      "name": "\u72d7\u72d7\u751f\u6d3b"
+    },
+    {
+      "cateid": "7",
+      "name": "\u72d7\u72d7\u73a9\u5177"
+    },
+    {
+      "cateid": "8",
+      "name": "\u72d7\u72d7\u4fdd\u5065"
+    },
+    {
+      "cateid": "9",
+      "name": "\u72d7\u72d7\u533b\u7597"
+    },
+    {
+      "cateid": "10",
+      "name": "\u72d7\u72d7\u7275\u5f15"
+    },
+    {
+      "cateid": "11",
+      "name": "\u72d7\u72d7\u7f8e\u5bb9"
+    },
+    {
+      "cateid": "12",
+      "name": "\u72d7\u72d7\u5468\u8fb9"
+    },
+    {
+      "cateid": "13",
+      "name": "\u72d7\u72d7\u6e05\u6d01"
+    }
+  ]
+}

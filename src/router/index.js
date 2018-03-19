@@ -5,6 +5,9 @@ import Shouye from '../pages/Shouye/Shouye.vue'
 import FenLei from '../pages/FenLei/FenLei.vue'
 import GouWuChe from '../pages/GouWuChe/GouWuChe.vue'
 import ChongWu from '../pages/ChongWu/ChongWu.vue'
+import PinPai from '../pages/FenLei/Pinpai/Pinpai.vue'
+import FenLeiList from '../pages/FenLei/Fenleilist/Fenleilist.vue'
+import QuanBu from '../pages/QuanBu/QuanBu.vue'
 
 Vue.use(VueRouter)
 
@@ -16,7 +19,21 @@ export default new VueRouter({
     },
     {
       path:'/fenlei',
-      component:FenLei
+      component:FenLei,
+      children:[
+        {
+          path:'pinpai',
+          component:PinPai
+        },
+        {
+          path:'/fenlei/fenleilist',
+          component:FenLeiList
+        },
+        {
+          path:'',
+          redirect:'fenleilist'
+        }
+      ]
     },
     {
       path:'/gouwuche',
@@ -25,6 +42,10 @@ export default new VueRouter({
     {
       path:'/chongwu',
       component:ChongWu
+    },
+    {
+      path:'/quanbu',
+      component:QuanBu
     },
     {
       path:'/',

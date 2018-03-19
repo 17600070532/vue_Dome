@@ -1,0 +1,157 @@
+
+{
+  "msg": "",
+  "code": "succeed",
+  "login_status": 0,
+  "mall_uid": "epet_0",
+  "mall_user": "",
+  "sys_time": 1521140773,
+  "hash": "",
+  "epet_site": "epet",
+  "topadv": {},
+  "show_history": 0,
+  "cate_list": [
+    {
+      "title": "\u72d7\u72d7\u533b\u7597",
+      "rigth_img": {
+        "image": "https:\/\/static.epetbar.com\/static_wap\/appmall\/lib\/goods\/cate_right_img.png",
+        "target": {
+          "mode": "goods_list",
+          "param": "cateid:49"
+        },
+        "img_size": "138x30"
+      },
+      "type": 0,
+      "flag_icon": "",
+      "list": [
+        {
+          "id_param": "cateid_522",
+          "name": "\u4f53\u5916\u9a71\u866b",
+          "photo": "https:\/\/img2.epetbar.com\/nowater\/2016-07\/23\/14\/c52111e9c4150f10ef7c5f9a1806fc93.jpg"
+        },
+        {
+          "id_param": "cateid_521",
+          "name": "\u4f53\u5185\u9a71\u866b",
+          "photo": "https:\/\/img2.epetbar.com\/nowater\/cates\/2014-03\/24\/81f4ac6b5b31143c056046bd9dc14b9e.jpg"
+        },
+        {
+          "id_param": "cateid_523",
+          "name": "\u76ae\u80a4\u75c5",
+          "photo": "https:\/\/img2.epetbar.com\/nowater\/cates\/2014-03\/24\/a47022c467818d51964196a63d706b76.jpg"
+        },
+        {
+          "id_param": "cateid_527",
+          "name": "\u5bb6\u5ead\u533b\u7597\u5e38\u5907",
+          "photo": "https:\/\/img2.epetbar.com\/nowater\/cates\/2014-03\/24\/7d009bab6bcdaeb941f18bd510aa9d56.jpg"
+        },
+        {
+          "id_param": "cateid_4330",
+          "name": "\u8033\u90e8\u62a4\u7406",
+          "photo": "https:\/\/img2.epetbar.com\/nowater\/2018-01\/25\/11\/ea59a2101f28f3a78b94e1e1671e35af.jpg"
+        },
+        {
+          "id_param": "cateid_4331",
+          "name": "\u773c\u90e8\u62a4\u7406",
+          "photo": "https:\/\/img2.epetbar.com\/nowater\/2018-01\/25\/14\/4b27726f0f1a44b34cfe9a32965ceafb.jpg"
+        },
+        {
+          "id_param": "cateid_4332",
+          "name": "\u53e3\u9f3b\u62a4\u7406",
+          "photo": "https:\/\/img2.epetbar.com\/nowater\/2018-01\/25\/15\/137ab5ae324905b93aa37503b053ad19.jpg"
+        }
+      ]
+    },
+    {
+      "title": "\u70ed\u95e8\u54c1\u724c",
+      "rigth_img": {
+        "image": "",
+        "img_size": "",
+        "target": {}
+      },
+      "type": 2,
+      "flag_icon": "",
+      "list": [
+        {
+          "logo": "https:\/\/img2.epetbar.com\/nowater\/brand_logo\/2012-12\/19\/fed6547b142c4a53584a0a886a65b707.jpg",
+          "name": "\u72ac\u5fc3\u4fdd",
+          "recommend": 0,
+          "tagongyi": 0,
+          "target": {
+            "mode": "brand_homepage",
+            "param": "487"
+          }
+        },
+        {
+          "logo": "https:\/\/img2.epetbar.com\/nowater\/brand_logo\/2016-08\/12\/14\/7f05c5e0fb15da2f14748c19d23a7334.jpg",
+          "name": "\u798f\u6765\u6069",
+          "recommend": 0,
+          "tagongyi": 0,
+          "target": {
+            "mode": "brand_homepage",
+            "param": "145"
+          }
+        },
+        {
+          "logo": "https:\/\/img2.epetbar.com\/nowater\/brand_logo\/2016-08\/12\/16\/4c37fc2c6578742b2a7747c135c5aef4.jpg",
+          "name": "\u9ea6\u9ad8\u81e3MicrocynAH",
+          "recommend": 0,
+          "tagongyi": 0,
+          "target": {
+            "mode": "brand_homepage",
+            "param": "1207"
+          }
+        },
+        {
+          "logo": "https:\/\/img2.epetbar.com\/nowater\/brand_logo\/2016-08\/12\/14\/0f7e2127c9d9defebe8d49ec98792cc4.jpg",
+          "name": "\u591a\u7f8e\u6d01",
+          "recommend": 0,
+          "tagongyi": 0,
+          "target": {
+            "mode": "brand_homepage",
+            "param": "461"
+          }
+        },
+        {
+          "logo": "https:\/\/img2.epetbar.com\/nowater\/brand_logo\/2016-08\/12\/14\/df67486fca926e53a4352e12250f87d1.jpg",
+          "name": "\u7ea2\u72d7RedDog",
+          "recommend": 0,
+          "tagongyi": 0,
+          "target": {
+            "mode": "brand_homepage",
+            "param": "380"
+          }
+        },
+        {
+          "logo": "https:\/\/img2.epetbar.com\/nowater\/brand_logo\/2016-08\/12\/14\/7dac564a72c7ac184120c61c699bfa2a.jpg",
+          "name": "\u7ef4\u514b",
+          "recommend": 0,
+          "tagongyi": 0,
+          "target": {
+            "mode": "brand_homepage",
+            "param": "254"
+          }
+        },
+        {
+          "logo": "https:\/\/img2.epetbar.com\/nowater\/brand_logo\/2016-08\/13\/16\/be4c1125ac976e9771117a59af6d874e.jpg",
+          "name": "\u5c0f\u5ba0",
+          "recommend": 0,
+          "tagongyi": 0,
+          "target": {
+            "mode": "brand_homepage",
+            "param": "205"
+          }
+        },
+        {
+          "logo": "https:\/\/img2.epetbar.com\/nowater\/brand_logo\/2016-08\/12\/16\/0c858d3e3373a1845bb94b685a1474f8.jpg",
+          "name": "AKC",
+          "recommend": 0,
+          "tagongyi": 0,
+          "target": {
+            "mode": "brand_homepage",
+            "param": "347"
+          }
+        }
+      ]
+    }
+  ]
+}

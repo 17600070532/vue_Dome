@@ -1,0 +1,50 @@
+
+{
+  "msg": "",
+  "code": "succeed",
+  "login_status": 0,
+  "mall_uid": "epet_0",
+  "mall_user": "",
+  "sys_time": 1521140979,
+  "hash": "",
+  "epet_site": "epet",
+  "topadv": {},
+  "show_history": 0,
+  "cate_list": [
+    {
+      "title": "\u72d7\u72d7\u6e05\u6d01",
+      "rigth_img": {
+        "image": "https:\/\/static.epetbar.com\/static_wap\/appmall\/lib\/goods\/cate_right_img.png",
+        "target": {
+          "mode": "goods_list",
+          "param": "cateid:4315"
+        },
+        "img_size": "138x30"
+      },
+      "type": 0,
+      "flag_icon": "",
+      "list": [
+        {
+          "id_param": "cateid_4316",
+          "name": "\u72d7\u72d7\u5395\u6240",
+          "photo": "https:\/\/img2.epetbar.com\/nowater\/2017-10\/11\/16\/d5ade0444ad0945d671c0a2f914e30fd.jpg"
+        },
+        {
+          "id_param": "cateid_4317",
+          "name": "\u72d7\u72d7\u5c3f\u7247",
+          "photo": "https:\/\/img2.epetbar.com\/nowater\/2017-10\/11\/16\/ba4a24c920d1c9c0a5ee43555f8b900b.jpg"
+        },
+        {
+          "id_param": "cateid_4318",
+          "name": "\u72d7\u72d7\u6e7f\u5dfe",
+          "photo": "https:\/\/img2.epetbar.com\/nowater\/2017-10\/11\/16\/5a980a2b9737177177c01fc187f52109.jpg"
+        },
+        {
+          "id_param": "cateid_4319",
+          "name": "\u6e05\u6d01\u9664\u81ed",
+          "photo": "https:\/\/img2.epetbar.com\/nowater\/2017-10\/11\/16\/601461874134987b3d4b6c345f398dd4.jpg"
+        }
+      ]
+    }
+  ]
+}

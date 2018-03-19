@@ -4,7 +4,6 @@
     <Footera/>
   </div>
 </template>
-
 <script>
 import Footera from './components/Footer/Footer.vue'
 
